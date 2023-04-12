@@ -8,7 +8,7 @@ trinucleotides = [i + j + k for i in nucleotides for j in nucleotides for k in n
 filename = 'c12a_predictor.sav'
 
 def gc_content(seq):
-    d = len([s for s in seq if s in 'CcGc']) / len(seq) * 100
+    d = len([s for s in seq if s in 'CcGg']) / len(seq) * 100
     return round(d, 2)
 
 def tokenize_sequence_global(seq, name):
